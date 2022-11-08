@@ -1,0 +1,195 @@
+/* main menu section starts */
+.main_menu {
+    display: flex;
+    list-style: none;
+}
+
+.main_menu a {
+    text-decoration: none;
+    color: #8391A1;
+}
+
+.main_menu a :hover {
+    color: #E85B30;
+}
+
+#logo_image {
+    height: 13vh;
+}
+
+.bar {
+    background-color: #FEC0CA;
+}
+
+.menu_items {
+    font-family: 'Yeseva One', cursive;
+}
+
+.top_bar_1 {
+    align-items: center;
+}
+
+/* main menu section ends */
+
+/* Intro section starts */
+.intro {
+    background-image: url("../images/background_photo_1.jpeg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+.intro_images {
+    height: 30vh;
+    border: 10px solid white;
+}
+
+/* Intro section ends */
+
+/* Wedding Portfolio section starts */
+.wedding_portfolio {
+    background-image: url("../images/background_photo_1.jpeg");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.wedding_portfolio_image_1 {
+    height: 70vh;
+    border: 10px solid white;
+}
+
+.wedding_portfolio_image_2 {
+    height: 30vh;
+    border: 10px solid white;
+}
+
+/* Wedding Portfolio section ends */
+
+/* "What's important to us?" section starts */
+.whats_important_to_us {
+    background-image: url("../images/background_photo_1.jpeg");
+    background-position-x: center top;
+    background-repeat: no-repeat;
+    align-items: start;
+}
+
+.i_image_1 {
+    height: 60vh;
+}
+
+.i_image_2 {
+    height: 35vh;
+}
+
+.i_container_2 {
+    width: 30%;
+}
+
+.i_container_3 p {
+    margin: 0 0 15px;
+}
+
+/* "What's important to us?" section ends */
+
+/* Pre footer section starts */
+.pre_footer {
+    background-image: url("../images/background_photo_1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Pre footer section ends */
+
+/* footer section starts */
+.footer {
+    background-image: url("../images/background_photo_3.jpeg");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.footer_menu {
+    list-style: none;
+}
+
+.footer_menu a {
+    text-decoration: none;
+    color: #E85B30;
+}
+
+.footer_menu a:hover {
+    text-decoration: underline;
+    color: #e55f36;
+}
+
+/* footer section ends */
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+    }
+
+    .main_menu {
+        display: none;
+    }
+
+    .top_bar_1 {
+        align-items: start;
+    }
+
+    .intro {
+        flex-direction: column;
+        width: 100vh;
+    }
+
+    .whats_important_to_us {
+        width: 100vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub_wedding_portfolio {
+        flex-direction: column;
+    }
+
+    .wedding_portfolio p {
+        display: none;
+    }
+
+    .i_image_1,
+    .i_image_2,
+    .wedding_portfolio_image_1,
+    .wedding_portfolio_image_2,
+    .intro_images {
+        height: 50vh;
+    }
+
+    .i_container_2 {
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .i_container_3 p {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .parent_container_2,
+    .subcontainer_3,
+    .subcontainer_4 {
+        flex-direction: column;
+    }
+
+    .end_banner,
+    .pre_footer,
+    .footer,
+    .wedding_portfolio,
+    .bar {
+        width: 100vh;
+    }
+
+}
